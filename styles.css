@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* tete de page */
+
+header.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header .burgerButton {
+    display: none;
+}
+
+.header .logoDiv {
+    width: 30%;
+}
+
+.header .logoDiv img {
+    width: 30%;
+}
+
+.header .navbarDiv {
+    display: flex;
+    justify-content: end;
+    width: 70%;
+}
+
+.navbarDiv .nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+    padding: 0px;
+    width: 100%;
+}
+
+.navbarDiv .nav ul li {
+    margin-left: 40px;
+}
+
+section.top-page {
+    background: url("acm2.png");
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    padding: 20px;
+}
+
+/* page de bienvenue */
+
+.big-title {
+    color: white;
+    font-size: 90px;
+    font-family: 'Prata', sans-serif;
+    font-weight: 100;
+}
+
+
+
+/* menu de navigation */
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #006400;
+}
+
+nav.nav li {
+    color: #006400;
+    align-items: center;
+}
+
+/* services */
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: crimson;
+}
+
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+/* actvites */
+
+.section-title {
+    font-size: 40px;
+    font-family: 'Prata', sans-serif;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: crimson;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.about-us {
+    font-size: 20px;
+    font-weight: 100;
+    justify-content: left;
+    margin: 20px;
+}
+
+.servicess {
+    font-size: 20px;
+    font-weight: 100;
+    justify-content: left;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+/* adresse */
+
+.address {
+    font-size: 20px;
+    font-weight: 100;
+    justify-content: left;
+    margin: 20px;
+}
+
+/* contact */
+
+.contacts {
+    font-size: 20px;
+    font-weight: 100;
+    justify-content: left;
+    margin: 20px;
+}
+
+/* pied de page */
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: #00be63;
+    border-top: 4px solid crimson;
+}
+
+.menuCloser{
+    display: none;
+}
+
+.address iframe {
+    width: 600px;
+    height: 450px;
+}
+
+footer>p {
+    margin: 2rem;
+    color: white;
+}
+
+@media (max-width: 28.75em) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    /*Tablets [601px -> 1200px]*/
+}
+
+@media only screen and (max-width: 600px) {
+    .header .burgerButton {
+        display: flex;
+        justify-content: end;
+       
+    }
+
+    .header .burgerButton img{
+        width: 40%;
+    }
+
+    .menuCloser{
+        padding-top: 20px;
+        padding-right: 30px;
+        text-align: right;
+
+    }
+
+    .header .navbarDiv .nav{
+        width: 70%!important;
+        background-color: #C41E3A;
+        font-weight: 500;
+        color: #fff;
+        position: fixed;
+        display: none;
+        top:0;
+        right: 0;
+        height: 100%;
+        z-index: 99;
+    }
+
+    .header .navbarDiv .nav ul{
+        display: block;
+    }
+
+
+    .address iframe {
+        width: unset;
+        height: unset;
+    }
+
+    .big-title {
+        color: white;
+        font-size: 50px;
+        font-family: 'Prata', sans-serif;
+        font-weight: 100;
+    }
+
+    .services {
+        display: block;
+        margin: 50px;
+    }
+
+    .logoDiv img{
+        width: 100%!important;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    /*Small smartphones [325px -> 425px]*/
+}
